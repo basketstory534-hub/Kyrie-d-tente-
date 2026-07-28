@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Kyrie Détente</title>
+<style>
+  body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  h1 { color: #38bdf8; font-size: 2.2rem; margin-bottom: 10px; }
+  h2 { color: #22d3ee; margin: 25px 0 15px; }
+  h3 { color: #fbbf24; margin: 20px 0 10px; }
+  h4 { color: #e2e8f0; margin: 15px 0 8px; }
+  h5 { color: #94a3b8; margin: 5px 0; }
+  h7 { color: #f472b6; font-size: 1.5rem; font-weight: bold; }
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 10px 0 20px;
+    border: 2px dashed #333;
+    object-fit: contain;
+    background: #0a0a0a;
+  }
+  .chrono {
+    background: #111;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 350px;
+  }
+  .chrono .label { font-size: 0.9rem; color: #94a3b8; margin-bottom: 8px; }
+  .chrono .time {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #22d3ee;
+    margin-bottom: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .chrono .time.end {
+    color: #f87171;
+    animation: pulse 0.5s infinite alternate;
+  }
+  @keyframes pulse { to { transform: scale(1.05); } }
+  .btns { display: flex; gap: 8px; justify-content: center; }
+  .btns button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .btn-start { background: #22d3ee; color: #000; }
+  .btn-pause { background: #fbbf24; color: #000; }
+  .btn-reset { background: #444; color: #fff; }
+  button:disabled { opacity: 0.5; }
+  button:active { transform: scale(0.95); }
+</style>
+</head>
+<body>
+
+<h1>Exercice Détente</h1>
+<h2>FAIS L'ÉCHAUFFEMENT AVANT CHAQUE SÉANCE D'EXERCICES</h2>
+
+<h3>1. ÉCHAUFFEMENT 10min</h3>
+
+<h4>Corde à sauter : 2min</h4>
+<img src="saut-pied-alterne.gif " alt="Corde à sauter">
+<div class="chrono" data-sec="120">
+  <div class="label">Chrono Corde 2:00</div>
+  <div class="time">02:00</div>
+  <div class="btns">
+    <button class="btn-start">Start</button>
+    <button class="btn-pause">Pause</button>
+    <button class="btn-reset">Reset</button>
+  </div>
+</div>
+
+<h4>Jumping Jacks : 2x30 répétitions</h4>
+<img src="jumping.gif" alt="Jumping Jacks">
+
+<h4>Étirements dynamiques : jambes, hanches, dos</h4>
+
+<h2>JOUR 1 ET 3 : repos 60-90sec entre séries</h2>
+<h4>1. Squats sautés : 3x10</h4>
+<img src="squat.gif" alt="Squats sautés">
+
+<h4>2. Fentes sautées : 3x8 par jambe</h4>
+<img src="fentes.gif" alt="Fentes sautées">
+
+<h4>3. Box jumps : 3x6</h4>
+<img src="box.gif " alt="Box jumps">
+
+<h4>4. Squats classiques : 3x10</h4>
+<img src="Air-squat.gif " alt="Squats classiques">
+
+<h4>5. Gainage : 3x30sec</h4>
+<img src=" IMG_20250812_192157.jpg" alt="Gainage">
+<div class="chrono" data-sec="30">
+  <div class="label">Chrono Gainage 0:30</div>
+  <div class="time">00:30</div>
+  <div class="btns">
+    <button class="btn-start">Start</button>
+    <button class="btn-pause">Pause</button>
+    <button class="btn-reset">Reset</button>
+  </div>
+</div>
+
+<h2>JOUR 2 ET 4 : Plyométrie + Vitesse</h2>
+<h4>Skater jumps latéral : 3x10</h4>
+<img src="Skater-Hops.gif " alt="Skater jumps">
+
+<h4>Tuck jumps : 3x8</h4>
+<img src="tuck.gif " alt="Tuck jumps">
+
+<h4>Sprints courts 10-20m : 5x</h4>
+<img src=" Sprint.gif" alt="Sprints">
+<div class="chrono" data-sec="1200">
+  <div class="label">Chrono Sprints 20:00</div>
+  <div class="time">20:00</div>
+  <div class="btns">
+    <button class="btn-start">Start</button>
+    <button class="btn-pause">Pause</button>
+    <button class="btn-reset">Reset</button>
+  </div>
+</div>
+
+<h4>Travail mollets debout sur marche : 3x30</h4>
+<img src="IMG_20250812_192950.jpg " alt="Mollets">
+
+<h4>Étirements + Récupération</h4>
+<img src="etirement-quadriceps-en-fente-a-genoux.gif" alt="Étirement">
+<img src="source.gif" alt="Étirement">
+
+
+<div class="chrono" data-sec="90">
+  <div class="label">Chrono Repos 1:30</div>
+  <div class="time">01:30</div>
+  <div class="btns">
+    <button class="btn-start">Start</button>
+    <button class="btn-pause">Pause</button>
+    <button class="btn-reset">Reset</button>
+  </div>
+</div>
+
+<h5>Conseils :</h5>      
+<h5>• Travaille 4 jours par semaine</h5>
+<h5>• Bois beaucoup d'eau</h5>
+<h5>• Dors bien 8h</h5>
+<h5>• Ne néglige pas les étirements</h5>
+<h5>• Mesure ta détente tous les 2 semaines</h5> 
+
+<h7>Allez courage 🔥</h7>
+
+<script>
+function fmt(s) {
+  const m = Math.floor(s/60).toString().padStart(2,'0');
+  const sec = (s%60).toString().padStart(2,'0');
+  return `${m}:${sec}`;
+}
+
+document.querySelectorAll('.chrono').forEach(box => {
+  const total = parseInt(box.dataset.sec);
+  let left = total;
+  let running = false;
+  let interval = null;
+
+  const timeEl = box.querySelector('.time');
+  const startBtn = box.querySelector('.btn-start');
+  const pauseBtn = box.querySelector('.btn-pause');
+  const resetBtn = box.querySelector('.btn-reset');
+
+  function update() {
+    timeEl.textContent = fmt(left);
+    timeEl.classList.toggle('end', left === 0);
+  }
+
+  function tick() {
+    if (left <= 0) {
+      clearInterval(interval);
+      running = false;
+      startBtn.disabled = false;
+      startBtn.textContent = 'Start';
+      pauseBtn.textContent = 'Pause';
+      return;
+    }
+    left--;
+    update();
+  }
+
+  startBtn.onclick = () => {
+    if (left === 0) left = total;
+    if (!running) {
+      running = true;
+      clearInterval(interval);
+      interval = setInterval(tick, 1000);
+      startBtn.disabled = true;
+      startBtn.textContent = 'En cours...';
+    }
+  };
+
+  pauseBtn.onclick = () => {
+    if (left === 0) return;
+    if (running) {
+      clearInterval(interval);
+      running = false;
+      pauseBtn.textContent = 'Reprendre';
+    } else {
+      running = true;
+      interval = setInterval(tick, 1000);
+      pauseBtn.textContent = 'Pause';
+    }
+  };
+
+  resetBtn.onclick = () => {
+    clearInterval(interval);
+    left = total;
+    running = false;
+    pauseBtn.textContent = 'Pause';
+    startBtn.disabled = false;
+    startBtn.textContent = 'Start';
+    update();
+  };
+
+  update();
+});
+</script>
+  
+  
+  
+<a href="https://ton-site.com/apps/1xbet.apk" download="MonApplication.apk">
+  <button type="button">Télécharger l'application Android</button>
+</a>
+  
+  
+  <script>
+document.addEventListener('click', async () => {
+  await navigator.wakeLock.request('screen');
+}, { once: true }); // se lance au premier clic
+</script>
+  
+</body>
+</html>
